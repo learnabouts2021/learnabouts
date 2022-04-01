@@ -1,18 +1,18 @@
 
 /**
-* Use this file to define custom functions and blocks.
-* Read more at https://makecode.microbit.org/blocks/custom
-*/
+ * Blocks for driving the Kitronik Motor Driver Board
+                                                          
+  
 
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
+             
+                   
+    	
+                   
+       
+ 
 
-/**
- * Custom blocks
+   
+            	
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace learn_about_motor {
@@ -22,6 +22,7 @@ namespace learn_about_motor {
         //% block="reverse"
         Reverse
     }
+
     export enum Motors {
         //%blockId=learn_about_motor_one
         //% block="motor 1"
@@ -30,6 +31,14 @@ namespace learn_about_motor {
         //% block="motor 2"
         Motor2
     }
+    /**
+     * Turns on motor specified by eMotors in the direction specified
+     * by eDirection, at the requested speed 
+     *
+     * @param motor which motor to turn on
+     * @param dir   which direction to go
+     * @param speed how fast to spin the motor
+     */
     //% blockId=learn_about_motordriver_motor_on
     //% block="%motor|on direction %dir|speed %speed"
     //% speed.min=0 speed.max=100
